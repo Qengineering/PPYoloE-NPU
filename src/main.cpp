@@ -63,10 +63,10 @@ int main(int argc, char** argv)
         return -1;
     }
 
-    char*          model_name = argv[1];
+    char*          model_path = argv[1];
     const char*    imagepath = argv[2];
 
-    printf("model: %s", model_name);
+    printf("model: %s", model_path);
 
     rknn_app_context_t rknn_app_ctx;
     memset(&rknn_app_ctx, 0, sizeof(rknn_app_context_t));
